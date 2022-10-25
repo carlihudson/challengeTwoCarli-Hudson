@@ -38,16 +38,12 @@ header a {
     align-items: center;
 }
 
-.navbar {
+.navbar, .main {
     justify-content: space-evenly;
 }
 
 body {
     background-color: #EED9F9;
-}
-
-.main {
-    justify-content: space-evenly;
 }
 
 .photo {
@@ -111,6 +107,10 @@ p {
     width:100%;
  }
 
+ .group-photo:hover, .study-guide-pic:hover {
+    filter: opacity(.5);
+ }
+
  .horiseon-photo {
     width: 100%;
     padding-bottom: 2rem;
@@ -122,7 +122,8 @@ p {
     padding: 1rem;
     background-color: #EED9F9;
     border: 2px solid var(--dark-purple);
-    max-width: 35%;
+    max-width: 60%;
+    align-self: flex-start;
  } 
 
  .study-guide-pic {
@@ -208,10 +209,15 @@ footer p {
     .study-guide-pic {
         width: 100%;
        flex-grow: 1;
-       padding-bottom: 1rem;
-       padding-right: 0;
+       padding-bottom: 2rem;
+       /* padding-right: 0; */
         
      }
+
+     .study-guide {
+        width: 100%;
+        flex-grow: 1;
+        /* padding-right: 1rem; */
     
      .myspace {
         width: 100%;
@@ -248,7 +254,6 @@ footer p {
         width: 100%;
         max-height: 100rem;
         margin-bottom: 1.5rem;
-        /* margin-left: 6rem; */
         
     }
 
@@ -294,6 +299,16 @@ footer p {
         padding-left: 0;
       
      }
+
+     .project-name {
+        max-width: 40%;
+        font-size: 1.5rem;
+     }
+
+     .study-guide-pic {
+        padding-bottom: 0;
+
+    }
 
     .contact {
         width: 85%;
@@ -367,8 +382,22 @@ footer p {
     ul {
        font-size: 1rem; 
     }
+    .projects {
+        justify-content: space-evenly;
+    }
 
     #proj {
         font-size: 2rem;
+        text-align: center;
+    }
+
+    .study-guide-pic {
+        padding-bottom: 0;
+
+    }
+
+    .project-name {
+       font-size: .75rem;
+
     }
 }
