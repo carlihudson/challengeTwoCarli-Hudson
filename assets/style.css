@@ -29,6 +29,8 @@ header a {
     font-size: 250%;
 }
 
+
+/* These next two rules are for many elements throughout the document. This made it much easier for me to add more flex containers, as I didn't have to declare it every time. */
 .row {
     display: flex;
     flex-flow: row wrap;
